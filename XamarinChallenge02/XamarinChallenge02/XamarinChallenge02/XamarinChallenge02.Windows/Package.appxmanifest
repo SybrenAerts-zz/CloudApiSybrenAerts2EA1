@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="bcb8ea66-f6c0-4c84-8a39-4480dc2a38a1"
+            Publisher="CN=Sybren Aerts"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>XamarinChallenge02.Windows</DisplayName>
+    <PublisherDisplayName>Sybren Aerts</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="XamarinChallenge02.Windows.App">
+      <m2:VisualElements
+          DisplayName="XamarinChallenge02.Windows"
+          Square150x150Logo="Assets\Logo.png"
+          Square30x30Logo="Assets\SmallLogo.png"
+          Description="XamarinChallenge02.Windows"
+          ForegroundText="light"
+          BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

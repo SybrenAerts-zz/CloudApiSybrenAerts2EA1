@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinAllianceApp.Views.LoginPage">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <Button x:Name = "buttonLogin"
+            Text = "LOGIN"
+            Clicked = "loginButton_Clicked"/>
+  <Button x:Name = "buttonBlob"
+          Text = "IMAGE"
+          Clicked = "blobButton_Clicked"/>
+  <Image x:Name="image"
+         HeightRequest="500"/>
+  <Label x:Name="label" text="{Binding Credit}"/>
+</ContentPage>
